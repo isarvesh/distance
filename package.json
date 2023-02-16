@@ -62,3 +62,4 @@
   },
   "homepage": "https://github.com/isarvesh/calculate-distance#readme"
 }
+"proxy": "http://localhost:5000"
