@@ -14,7 +14,7 @@ const DistanceCalculator = () => {
     setIsLoading(true);
 
     const bingMapsApiKey = "At0f7dw9H62jf_IFEb15zjn0RSIiUJK6uKGX_68gjYEKw4MY8iRexyajfJD99BMc";
-    const url = `http://dev.virtualearth.net/REST/v1/Routes/Driving?wp.0=${city1}&wp.1=${city2}&key=${bingMapsApiKey}`;
+    const url = `https://dev.virtualearth.net/REST/v1/Routes/Driving?wp.0=${city1}&wp.1=${city2}&key=${bingMapsApiKey}`;
 
     try {
       const response = await fetch(url);
