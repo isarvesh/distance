@@ -1,6 +1,5 @@
-# City Distance API
+# City Distance API 📍
 
-![City Distance API](city-distance.png)
 
 This project implements an API endpoint that accepts a pair of city names as input and returns the travel distance (not straight-line distance) between these cities, sub-cities, or localities.
 
