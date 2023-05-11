@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# City Distance API
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![City Distance API](city-distance.png)
 
-## Available Scripts
+This project implements an API endpoint that accepts a pair of city names as input and returns the travel distance (not straight-line distance) between these cities, sub-cities, or localities.
 
-In the project directory, you can run:
+## Expected Solution
 
-### `npm start`
+You are expected to share a hosted, working GET endpoint and an API contract for the same.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Additional Information
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Choice of backend stack is up to you.
+- Additional points for building a front-end where you can enter the city names and it shows the distance. You can choose to host it locally and expose it via ngrok for testing.
+- Feel free to use any free-tier hosting. Locally hosted endpoints are okay but not desirable.
+- Feel free to integrate with any third-party maps provider to fetch this information.
+- You would be judged on extensibility, modularity, and code quality.
+- Code with test cases is a huge plus.
 
-### `npm test`
+## API Endpoint
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The API endpoint accepts a pair of city names as input and returns the distance between them.
 
-### `npm run build`
+### API Contract
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Endpoint: `/api/distance`
+- Method: `GET`
+- Request Parameters:
+  - `city1`: The name of the first city
+  - `city2`: The name of the second city
+- Response Format: JSON
+- Example Response:
+  ```json
+  {
+    "distance": "1,080.7 km"
+  }
+  
+### Getting Started
+- Installation
+- Clone the repository: git clone https://github.com/isarvesh/distance.git
+- Navigate to the project directory: cd distance
+- Install dependencies: npm install
+- Start the development server: npm run dev
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Front-end
+To test the API and view the distance between cities, you can visit the hosted front-end.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Hosted Front-end: https://distance-lemon.vercel.app/
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+License
+This project is licensed under the MIT License.
